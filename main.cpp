@@ -5,25 +5,25 @@
 void laba1(double fBound, double sBound)
 {
 	double result = fBound/2 + sBound/2;
-	std::cout << "Îòâåò: " << result << std::endl;
+	std::cout << "ÐžÑ‚Ð²ÐµÑ‚: " << result << std::endl;
 }
 
 int64_t procNumSeq(int64_t a, int64_t b)
 {
-	std::cout << std::endl << "Èñïîëüçóåòñÿ ôóíêöèÿ êâàäðàòà ñóììû äâóõ ÷èñåë" << std::endl;
+	std::cout << std::endl << "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð° ÑÑƒÐ¼Ð¼Ñ‹ Ð´Ð²ÑƒÑ… Ñ‡Ð¸ÑÐµÐ»" << std::endl;
 	return (a + b)*(a + b);
 }
 
 int64_t procNumSeq(int64_t a)
 {
-	std::cout << std::endl << "Èñïîëüçóåòñÿ ôóíêöèÿ îáðàòíîãî ÷èñëà" << std::endl;
+	std::cout << std::endl << "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð°" << std::endl;
 	return -a;
 }
 
 void firstClause()
 {
 	int64_t a, b, c, answer;
-	std::cout << std::endl << "Ââåäèòå òðè ÷èñëà: ";
+	std::cout << std::endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚Ñ€Ð¸ Ñ‡Ð¸ÑÐ»Ð°: ";
 	std::cin >> a >> b >> c;
 	if (a + b + c == a || a + b + c == b || a + b + c == c) {
 		answer = procNumSeq(a + b + c);
@@ -31,14 +31,14 @@ void firstClause()
 	else {
 		answer = procNumSeq(a ? a : b, c ? c : b);	
 	}
-	std::cout << "Îòâåò: " << answer;
+	std::cout << "ÐžÑ‚Ð²ÐµÑ‚: " << answer;
 }
 
 void secondClause()
 {
 	double fBound, sBound, result;
-	std::cout << std::endl << "Ëàáà ¹1 Â.5: Ïî 2-ì çíà÷åíèÿì (êðàÿì èíòåðâàëà) íà äåéñòâèòåëüíîé îñè îïðåäåëèòü ñåðåäèíó èíòåðâàëà" << std::endl;
-	std::cout << "Ââåäèòå 2 ÷èñëà (double): ";
+	std::cout << std::endl << "Ð›Ð°Ð±Ð° â„–1 Ð’.5: ÐŸÐ¾ 2-Ð¼ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸ÑÐ¼ (ÐºÑ€Ð°ÑÐ¼ Ð¸Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»Ð°) Ð½Ð° Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð¹ Ð¾ÑÐ¸ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ñ‚ÑŒ ÑÐµÑ€ÐµÐ´Ð¸Ð½Ñƒ Ð¸Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»Ð°" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 2 Ñ‡Ð¸ÑÐ»Ð° (double): ";
 	std::cin >> fBound >> sBound;
 	laba1(fBound, sBound);
 }
@@ -47,7 +47,7 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	uint16_t flag;
-	std::cout << "Ïóíêò 1: 1" << std::endl << "Ïóíêò 2: 2" << std::endl;
+	std::cout << "ÐŸÑƒÐ½ÐºÑ‚ 1: 1" << std::endl << "ÐŸÑƒÐ½ÐºÑ‚ 2: 2" << std::endl;
 	std::cin >> flag;
 
 	if (flag == 1) 
